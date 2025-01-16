@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import PDFParser from "pdf2json";
 
+export const maxDuration = 60;
 export async function POST(request: Request) {
   try {
     const formData = await request.formData();
